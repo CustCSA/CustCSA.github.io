@@ -12,7 +12,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.outdate = {"enable":true,"daysAgo":180,"message":"本文最后更新于 {time}，请注意文中内容可能已经发生变化。"};window.REIMU_CONFIG.code_block = {"expand":true};</script>
   
   <title>
-    归档 |
+    目录爆破工具 |
     
     CUST-CSA
   </title>
@@ -27,15 +27,18 @@
 
   
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="CUST-CSA">
-<meta property="og:url" content="http://example.com/archives/index.html">
+    <meta name="description" content="dir-blast （目录爆破） 一个用于 CTF 的快速目录扫描工具 1234567--------------------------------------------------------------|      _   _                  _       _                 _    ||   __| | (_)  _ __          | |">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目录爆破工具">
+<meta property="og:url" content="http://example.com/2024/12/26/Yohane-Mashiro/project/dri-blast/index.html">
 <meta property="og:site_name" content="CUST-CSA">
+<meta property="og:description" content="dir-blast （目录爆破） 一个用于 CTF 的快速目录扫描工具 1234567--------------------------------------------------------------|      _   _                  _       _                 _    ||   __| | (_)  _ __          | |">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/banner.webp">
+<meta property="article:published_time" content="2024-12-26T20:04:00.000Z">
+<meta property="article:modified_time" content="2024-12-26T12:28:31.821Z">
 <meta property="article:author" content="CUST-CSA">
+<meta property="article:tag" content="ctf工具">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/banner.webp">
   
   
     <link rel="alternate" href="/atom.xml" title="CUST-CSA" type="application/atom+xml">
@@ -160,7 +163,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner.webp" alt="">
+      <img fetchpriority="high" src="/images/banner.webp" alt="目录爆破工具">
     
   
   <div id="header-outer">
@@ -169,7 +172,7 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">归档</h1>
+            <h1 data-aos="slide-up">目录爆破工具</h1>
           </a>
         
       
@@ -185,61 +188,102 @@
 
         <div id="content">
           
-          <section id="main">
-<div class="archives-outer-wrap" data-aos="fade-up">
-  <div class="tag-wrap">
-    
-      <div class="archives-tag-list-item" data-aos="zoom-in">
-        <a class="archives-tag-list-link" href="/tags/ctf%E5%B7%A5%E5%85%B7/">ctf工具</a>
-      </div>
-    
-  </div>
-  <div class="category-wrap">
-    
-      <div class="archives-category-list-item" data-aos="zoom-in">
-        <a class="archives-category-list-link" href="/categories/Yohane-Mashiro/">Yohane-Mashiro</a>
-      </div>
-    
-  </div>
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap" data-aos="fade-up">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <ul>
-          
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/12/26/Yohane-Mashiro/project/dri-blast/">
-      <time class="dt-published" datetime="2024-12-26T20:04:00.000Z" itemprop="datePublished">12-26</time>
-    </a>
-  </div>
-  
-    <a class="archive-article-title" href="/2024/12/26/Yohane-Mashiro/project/dri-blast/">目录爆破工具</a>
-  
-</li>
+          <section id="main"><article id="post-Yohane-Mashiro/project/dri-blast" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2024/12/26/Yohane-Mashiro/project/dri-blast/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-12-26T20:04:00.000Z" itemprop="datePublished">2024-12-26</time>
+    <time style="display: none;" id="post-update-time">2024-12-26</time>
+  </a>
+</div>
 
-          
-          
-        </ul>
-      </section>
-  
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Yohane-Mashiro/" data-aos="zoom-in">Yohane-Mashiro</a>
   </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote id="outdate-blockquote" style="display: none;"><p></p></blockquote>
+      
+      
+        <h1 id="dir-blast-目录爆破"><a class="markdownIt-Anchor" href="#dir-blast-目录爆破"></a> dir-blast （目录爆破）</h1>
+<p>一个用于 CTF 的快速目录扫描工具</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">--------------------------------------------------------------</span><br><span class="line">|      _   _                  _       _                 _    |</span><br><span class="line">|   __| | (_)  _ __          | |__   | |   __ _   ___  | |   |</span><br><span class="line">|  / _` | | | | &#x27;__|  _____  | &#x27;_ \  | |  / _` | / __| | __| |</span><br><span class="line">| | (_| | | | | |    |_____| | |_) | | | | (_| | \__ \ | |_  |</span><br><span class="line">|  \__,_| |_| |_|            |_.__/  |_|  \__,_| |___/  \__| |</span><br><span class="line">--------------------------------------------------------------</span><br></pre></td></tr></table></figure>
+<h2 id="功能"><a class="markdownIt-Anchor" href="#功能"></a> 功能</h2>
+<ul>
+<li>使用字典文件对目标 URL 进行目录暴力破解</li>
+<li>支持多线程，提高扫描速度</li>
+</ul>
+<h2 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> 使用方法</h2>
+<h3 id="从源码运行"><a class="markdownIt-Anchor" href="#从源码运行"></a> 从源码运行</h3>
+<ol>
+<li>克隆仓库到本地： <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xcx2006/dir-blast.git</span><br></pre></td></tr></table></figure>
+</li>
+<li>进入项目目录： <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> dir-blast</span><br></pre></td></tr></table></figure>
+</li>
+<li>安装依赖： <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li>运行脚本： <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python main.py -u &lt;目标URL&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="使用-release"><a class="markdownIt-Anchor" href="#使用-release"></a> 使用 Release</h3>
+<p>你也可以从 <a target="_blank" rel="noopener" href="https://github.com/Shindou-Ayane/dir-blast/releases">Release 页面</a> 下载最新的可执行文件。</p>
+<h2 id="参数说明"><a class="markdownIt-Anchor" href="#参数说明"></a> 参数说明</h2>
+<ul>
+<li><code>-u</code> 或 <code>--url</code>：目标 URL 地址（必填）</li>
+<li><code>-w</code> 或 <code>--wordlist</code>：字典文件路径（默认: <code>dictionary.txt</code>）</li>
+<li><code>-t</code> 或 <code>--threads</code>：线程数（默认: 50）</li>
+</ul>
+<hr />
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/ctf%E5%B7%A5%E5%85%B7/" rel="tag">ctf工具</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+
+</article>
+
+
+
 
 
 
 </section>
           
             <aside id="sidebar">
-  <div class="sidebar-wrapper ">
+  <div class="sidebar-wrapper wrap-sticky">
     <div class="sidebar-wrap" data-aos="fade-up">
       
-        <div class="sidebar-author">
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#dir-blast-%E7%9B%AE%E5%BD%95%E7%88%86%E7%A0%B4"><span class="toc-number">1.</span> <span class="toc-text"> dir-blast （目录爆破）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.</span> <span class="toc-text"> 功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text"> 使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%BA%90%E7%A0%81%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 从源码运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-release"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 使用 Release</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-number">1.3.</span> <span class="toc-text"> 参数说明</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/1.jpg" data-sizes="auto" alt="CUST-CSA" class="lazyload">
   <div class="sidebar-author-name">CUST-CSA</div>
   <div class="sidebar-description"></div>
@@ -298,8 +342,13 @@
     
   
 </div>
-
+</div>
       
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
       
     </div>
   </div>
@@ -361,7 +410,16 @@
       <nav id="mobile-nav">
   <div class="sidebar-wrap">
     
-      <div class="sidebar-author">
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#dir-blast-%E7%9B%AE%E5%BD%95%E7%88%86%E7%A0%B4"><span class="toc-number">1.</span> <span class="toc-text"> dir-blast （目录爆破）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.</span> <span class="toc-text"> 功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text"> 使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%BA%90%E7%A0%81%E8%BF%90%E8%A1%8C"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 从源码运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-release"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 使用 Release</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-number">1.3.</span> <span class="toc-text"> 参数说明</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/1.jpg" data-sizes="auto" alt="CUST-CSA" class="lazyload">
   <div class="sidebar-author-name">CUST-CSA</div>
   <div class="sidebar-description"></div>
@@ -420,9 +478,14 @@
     
   
 </div>
-
+</div>
     
   </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
   
 </nav>
 
@@ -508,7 +571,48 @@
     
     
       
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
     
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
     
   </div>
 </div>
