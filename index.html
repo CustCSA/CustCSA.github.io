@@ -296,41 +296,10 @@ file:///C:/Windows/System32/drivers/etc/hosts（Windows系统中）
     <div class="post-wrapper">
   <div class="post-wrap-right" data-aos="fade-up">
     
-      <a class="post-link" href="/2025/01/02/Yohane-Mashiro/SSRF/%E7%AE%80%E4%BB%8B/" aria-label="SSRF简介"></a>
-    
-    
-    <div class="post-cover-right">
-      
-        <img data-src="https://avatars.githubusercontent.com/u/78677516?v=4" data-sizes="auto" alt="SSRF简介" class="lazyload">
-      
-    </div>
-    <div class="post-info">
-      <div class="post-meta">
-        <span><span class="icon-calendar"></span>2025-01-02</span>
-        <span><span class="icon-pencil"></span>1.8k 字</span>
-        <span><span class="icon-clock"></span>6 分钟</span>
-      </div>
-      <h2 class="post-title">SSRF简介</h2>
-      <article class="post-article">
-        
-          转载自とある晨曦の幻想乡
- SSRF（Server-Side Request Forgery，服务器端请求伪造）的原理
-SSRF（服务器端请求伪造）是一种攻击技术，攻击者通过操控一个Web应用发起伪造的请求，从而欺骗目标服务器，导致服务器向攻击者指定的地址（可能是外部服务器，也可能是内网地址）发起请求。这类攻击利用了服务器本身的网络访问权限，通常可以绕过防火墙和网络隔离，访问原本无法访问的资源，进而引发数据泄露、系统入侵等安全问题。
-SSRF的关键在于通过操控Web应用的请求机制来访问原本不可访问的服务。攻击者并不直接与目标服务器交互，而是通过漏洞利用Web服务器发起恶意请求。
- SSRF攻击
-        
-      </article>
-    </div>
-  </div>
-</div>
-  
-    <div class="post-wrapper">
-  <div class="post-wrap-left" data-aos="fade-up">
-    
       <a class="post-link" href="/2025/01/02/Yohane-Mashiro/ctfshow/SSRF%E5%88%B7%E9%A2%98/" aria-label="SSRF刷题"></a>
     
     
-    <div class="post-cover-left">
+    <div class="post-cover-right">
       
         <img data-src="https://avatars.githubusercontent.com/u/78677516?v=4" data-sizes="auto" alt="SSRF刷题" class="lazyload">
       
@@ -351,6 +320,37 @@ SSRF的关键在于通过操控Web应用的请求机制来访问原本不可访�
 1234url=http://0/flag.php #在Linux中，0也会被解析成127.0.0.1url=http://127.255.255.254/flag.php url=http://127.1/flag.php #127.1会被解析成127.0.0.1，也就意味着为零可缺省url=http://2130706433/flag.php
  web353
 这里过滤了localhost和
+        
+      </article>
+    </div>
+  </div>
+</div>
+  
+    <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/2025/01/02/Yohane-Mashiro/SSRF/%E7%AE%80%E4%BB%8B/" aria-label="SSRF简介"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://avatars.githubusercontent.com/u/78677516?v=4" data-sizes="auto" alt="SSRF简介" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-01-02</span>
+        <span><span class="icon-pencil"></span>1.8k 字</span>
+        <span><span class="icon-clock"></span>6 分钟</span>
+      </div>
+      <h2 class="post-title">SSRF简介</h2>
+      <article class="post-article">
+        
+          转载自とある晨曦の幻想乡
+ SSRF（Server-Side Request Forgery，服务器端请求伪造）的原理
+SSRF（服务器端请求伪造）是一种攻击技术，攻击者通过操控一个Web应用发起伪造的请求，从而欺骗目标服务器，导致服务器向攻击者指定的地址（可能是外部服务器，也可能是内网地址）发起请求。这类攻击利用了服务器本身的网络访问权限，通常可以绕过防火墙和网络隔离，访问原本无法访问的资源，进而引发数据泄露、系统入侵等安全问题。
+SSRF的关键在于通过操控Web应用的请求机制来访问原本不可访问的服务。攻击者并不直接与目标服务器交互，而是通过漏洞利用Web服务器发起恶意请求。
+ SSRF攻击
         
       </article>
     </div>
